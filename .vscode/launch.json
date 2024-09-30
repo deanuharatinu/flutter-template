@@ -5,25 +5,38 @@
     "version": "0.2.0",
     "configurations": [
         {   
-            "name": "Development",  
+            "name": "Development Flavor",  
             "request": "launch", 
             "type": "dart",       
             "program": "lib/main.dart", 
             "args": [    
+                "--debug",
                 "--flavor",   
                 "development"
             ]
         },  
         {  
-            "name": "Production",
+            "name": "Production Flavor",
             "request": "launch", 
             "type": "dart", 
             "program": "lib/main.dart",  
             "args": [       
+                "--debug",
                 "--flavor",   
                 "production",
             ]     
-        }  
+        },
+        {  
+          "name": "Production Release",
+          "request": "launch", 
+          "type": "dart", 
+          "program": "lib/main.dart",  
+          "args": [
+              "--release",       
+              "--flavor",   
+              "production",
+          ]     
+      }  
     ],
     "compounds": []
 }
