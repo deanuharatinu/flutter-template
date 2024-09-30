@@ -9,20 +9,20 @@
             "request": "launch", 
             "type": "dart",       
             "program": "lib/main.dart", 
-            "args": [    
-                "--flavor",   
-                "development"
-            ]
+            // "args": [    
+            //     "--flavor",   
+            //     "development"
+            // ]
         },  
         {  
             "name": "Production",
             "request": "launch", 
             "type": "dart", 
             "program": "lib/main.dart",  
-            "args": [       
-                "--flavor",   
-                "production",
-            ]     
+            // "args": [       
+            //     "--flavor",   
+            //     "production",
+            // ]     
         }  
     ],
     "compounds": []
