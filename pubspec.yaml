@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   alice: ^0.4.2
+  logger: ^2.4.0
 
 dev_dependencies:
   flutter_test:
