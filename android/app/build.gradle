@@ -47,10 +47,30 @@ android {
         applicationId "com.example.flutter_template"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+        
+        // TODO make sure the minimum android version
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+
+        flavorDimensions "default"
+
+        productFlavors {
+          development {
+            dimension "default"
+            resValue "string", "app_name", "APP NAME (Development)"
+            applicationIdSuffix ".dev"
+            manifestPlaceholders.appName = "APP NAME (Development)"
+          }
+
+          production {
+            dimension "default"
+            resValue "string", "app_name", "APP NAME"
+            applicationIdSuffix ""
+            manifestPlaceholders.appName = "APP NAME"
+          }
+        }
     }
 
     buildTypes {
