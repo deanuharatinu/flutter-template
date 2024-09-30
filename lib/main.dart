@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/core/bootstrap/app_bootstraper.dart';
 
-void main() {
-  runApp(const MainApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await AppBootstraper.init(
+    mainAppWidget: const MainApp(),
+    runApp: runApp,
+  );
 }
 
 class MainApp extends StatelessWidget {
