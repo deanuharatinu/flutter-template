@@ -47,5 +47,6 @@ app.*.map.json
 .fvm/
 
 # Auto-generated files
+lib/router/router.gr.dart
 *.freezed.dart
 *.g.dart
