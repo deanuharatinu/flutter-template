@@ -9,14 +9,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  # BLOC
+  flutter_bloc: ^8.1.6
+
+  # Routing
+  auto_route: ^7.9.2
+
   alice: ^0.4.2
   logger: ^2.4.0
+  freezed_annotation: ^2.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # Linter
   flutter_lints: ^2.0.0
-  
+
+  # Assets
+  build_runner: ^2.4.6
+  freezed: ^2.5.7
 
 flutter:
   uses-material-design: true
