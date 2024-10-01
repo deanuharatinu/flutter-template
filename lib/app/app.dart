@@ -17,6 +17,10 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFF7F7F7),
+        primarySwatch: Colors.blue,
+      ),
       key: _navigatorKey,
       routerConfig: _appRouter.config(),
     );
