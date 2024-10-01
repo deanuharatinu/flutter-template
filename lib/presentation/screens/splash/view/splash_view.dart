@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template/app/blocs/security/bloc/security_bloc.dart';
-import 'package:flutter_template/screens/splash/bloc/splash_bloc.dart';
-import 'package:flutter_template/widgets/dialogs/env_security_dialog.dart';
+import 'package:flutter_template/presentation/screens/splash/bloc/splash_bloc.dart';
+import 'package:flutter_template/presentation/widgets/dialogs/env_security_dialog.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

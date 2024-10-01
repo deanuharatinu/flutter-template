@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_template/services/security/env_security_service.dart';
+import 'package:flutter_template/core/services/security/env_security_service.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'security_event.dart';

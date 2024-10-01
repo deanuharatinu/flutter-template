@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:flutter_template/router/router.gr.dart';
+import 'package:flutter_template/core/router/router.gr.dart';
 
 @AutoRouterConfig(
   replaceInRouteName: 'Screen,Route',
