@@ -1,8 +1,11 @@
+import 'package:alice/alice.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template/app/blocs/security/bloc/security_bloc.dart';
 import 'package:flutter_template/core/bootstrap/startup_builder.dart';
+import 'package:flutter_template/core/router/router.dart';
+import 'package:flutter_template/core/services/service_locator/service_locator.dart';
 
 class AppBootstraper {
   static Future<void> init({
@@ -14,7 +17,9 @@ class AppBootstraper {
     await StartupBuilder.build();
 
     if (kDebugMode) {
-      // TODO do something related to debugging
+      final AppRouter router = sl();
+      final Alice alice = sl();
+      alice.setNavigatorKey(router.navigatorKey);
     }
 
     final provider = BlocProvider(
