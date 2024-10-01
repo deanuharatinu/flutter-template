@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/core/router/router.dart';
+import 'package:flutter_template/core/services/service_locator/service_locator.dart';
 
 final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
 
@@ -11,13 +12,7 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  late AppRouter _appRouter;
-
-  @override
-  void initState() {
-    super.initState();
-    _appRouter = AppRouter();
-  }
+  final AppRouter _appRouter = sl();
 
   @override
   Widget build(BuildContext context) {
