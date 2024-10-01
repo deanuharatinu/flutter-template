@@ -3,7 +3,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter_template/app/blocs/security/bloc/security_bloc.dart';
+import 'package:flutter_template/core/router/router.gr.dart';
 import 'package:flutter_template/presentation/screens/splash/bloc/splash_bloc.dart';
 import 'package:flutter_template/presentation/widgets/dialogs/env_security_dialog.dart';
 
@@ -47,9 +49,20 @@ class _SplashViewState extends State<SplashView> {
           },
         ),
       ],
-      child: const Scaffold(
-        body: Center(
-          child: Text('Splash screen'),
+      child: Scaffold(
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('Splash Screen'),
+              MaterialButton(
+                onPressed: () {
+                  context.router.replaceAll([const HomeRoute()]);
+                },
+                child: const Text('Next Page'),
+              ),
+            ],
+          ),
         ),
       ),
     );
