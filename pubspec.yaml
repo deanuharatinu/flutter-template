@@ -19,6 +19,7 @@ dependencies:
   alice: ^0.4.2
   logger: ^2.4.0
   freezed_annotation: ^2.2.0
+  flutter_jailbreak_detection: ^1.10.0
 
 dev_dependencies:
   flutter_test:

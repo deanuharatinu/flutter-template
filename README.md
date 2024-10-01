@@ -15,7 +15,7 @@ Template for Flutter project to boost development from scratch.
 
 ## Setup Project
 
-run the following commands:
+Run the following commands:
 
 ```
 make project
@@ -24,7 +24,7 @@ make project
 
 ## Project Overview
 
-### UI Pattern
+### UI Presentation
 
 - BLOC
 
@@ -41,6 +41,9 @@ make project
 
 - **Android** version 5.0 and later
 - **iOS** version 11 and later
+
+### Security
+- Root & Jailbreak detection
 
 ## Environment Setup
 
