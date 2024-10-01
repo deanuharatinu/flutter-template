@@ -1,0 +1,8 @@
+targets:
+  $default:
+    builders:
+      envied_generator|envied:
+        # change the path to the desired path
+        options:
+          path: .env.development
+          override: true

@@ -57,3 +57,23 @@ sudo echo 'fvm flutter ${@:1}' > "<path_to_flutter>/bin flutter" && sudo chmod +
 
 sudo echo 'fvm dart ${@:1}' > "<path_to_flutter>/bin/dart" && sudo chmod +x <path_to_flutter>/bin/dart
 ```
+
+### Change Environment
+
+1. On project's root, add two new .env file:
+    - .env.development
+    - .env.production
+
+2. Refer to `.env.example` and `env.dart`, as `.env.production` or `.env.development` should be ignored in source control
+3.  To generate env, on `build.yaml`, change:
+    ```
+    path: .env.development
+    ```
+    to
+    ```
+    path: .env.production
+    ```
+    and run:
+    ```
+    make env
+    ```

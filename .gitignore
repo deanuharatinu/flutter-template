@@ -50,3 +50,9 @@ app.*.map.json
 lib/router/router.gr.dart
 *.freezed.dart
 *.g.dart
+
+# credentials and environments
+.env
+.env.development
+.env.production
+assets/credentials/**
