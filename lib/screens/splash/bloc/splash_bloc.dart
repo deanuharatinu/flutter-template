@@ -5,11 +5,16 @@ part 'splash_event.dart';
 part 'splash_state.dart';
 part 'splash_bloc.freezed.dart';
 
-
 class SplashBloc extends Bloc<SplashEvent, SplashState> {
   SplashBloc() : super(const _Initial()) {
-    on<SplashEvent>((event, emit) {
-      // TODO: implement event handler
+    on<SplashEvent>((events, emit) async {
+      await events.map(
+        started: (event) => _onStarted(event, emit),
+      );
     });
+  }
+
+  _onStarted(_Started event, Emitter<SplashState> emit) async {
+    // TODO
   }
 }

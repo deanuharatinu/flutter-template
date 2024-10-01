@@ -1,4 +1,3 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_template/router/router.dart';
 
@@ -24,9 +23,7 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       key: _navigatorKey,
-      routerDelegate: AutoRouterDelegate(
-        _appRouter,
-      ),
+      routerConfig: _appRouter.config(),
     );
   }
 }

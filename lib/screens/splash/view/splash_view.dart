@@ -19,10 +19,10 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder(builder: (context, state) {
+    return BlocBuilder<SplashBloc, SplashState>(builder: (context, state) {
       return const Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text('Splash screen'),
         ),
       );
     });
