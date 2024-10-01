@@ -5,6 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_template/app/blocs/security/bloc/security_bloc.dart';
 import 'package:flutter_template/core/bootstrap/startup_builder.dart';
 import 'package:flutter_template/core/router/router.dart';
+import 'package:flutter_template/core/services/service_locator/service_locator.dart'
+    as service_locator;
 import 'package:flutter_template/core/services/service_locator/service_locator.dart';
 
 class AppBootstraper {
@@ -14,6 +16,7 @@ class AppBootstraper {
   }) async {
     // TODO init all services on app startup
 
+    service_locator.init();
     await StartupBuilder.build();
 
     if (kDebugMode) {
