@@ -16,6 +16,9 @@ dependencies:
   # Routing
   auto_route: ^7.9.2
 
+  # Service locator / DI
+  get_it: ^8.0.0
+
   alice: ^0.4.2
   logger: ^2.4.0
   freezed_annotation: ^2.2.0
