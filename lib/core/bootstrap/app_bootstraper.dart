@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_template/app/blocs/security/bloc/security_bloc.dart';
 import 'package:flutter_template/core/bootstrap/startup_builder.dart';
 
 class AppBootstraper {
@@ -15,6 +17,11 @@ class AppBootstraper {
       // TODO do something related to debugging
     }
 
-    runApp(mainAppWidget);
+    final provider = BlocProvider(
+      create: (context) => SecurityBloc(),
+      child: mainAppWidget,
+    );
+
+    runApp(provider);
   }
 }
