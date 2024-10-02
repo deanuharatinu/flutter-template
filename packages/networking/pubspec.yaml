@@ -1,0 +1,21 @@
+name: networking
+description: "Networking Mdule"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <=4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.2.1+1
+  dio_cache_interceptor: ^3.4.2
+  logger: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.3.3
